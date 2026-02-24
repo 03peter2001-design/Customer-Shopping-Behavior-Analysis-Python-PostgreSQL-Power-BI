@@ -1,15 +1,6 @@
 👨🏻‍💻 Customer Shopping Behavior Analysis
 This repository showcases an end-to-end data analytics portfolio project using retail customer shopping data. It follows a realistic analyst workflow: from loading and cleaning data in Python, to running business-focused SQL queries, building a Power BI dashboard, and wrapping everything up in a report and presentation.
 
-This project is ideal for:
-
-📊 Data analyst candidates who want a job-ready portfolio project
-
-📚 Learners practicing Python, SQL, and Power BI in one pipeline
-
-💼 Professionals preparing for interviews in Data Analytics / Data Science / Product Analytics
-
-📌 Project Overview
 The main objective is to transform raw customer shopping data into actionable business insights for a retail company by:
 
 ✅ Data Preparation, Modeling & EDA (Python)
