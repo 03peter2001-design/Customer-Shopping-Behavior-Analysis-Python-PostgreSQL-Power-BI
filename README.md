@@ -1,170 +1,152 @@
-📊 Customer Shopping Behavior Analysis
+# 👨🏻‍💻 Customer Shopping Behavior Data Analyst Portfolio Project (AI & ML Enhanced)
 
-Analyze customer transactions to uncover spending patterns, product preferences, and subscription behavior. This project demonstrates an end-to-end analytics workflow from data loading to business insights and visualization.
+> This project demonstrates a full, corporate-grade end-to-end data analytics workflow, enhanced with machine learning for customer segmentation and purchase prediction. It mirrors real-world analytics tasks, from raw data ingestion to actionable business insights, interactive dashboards, and reporting.
 
-📌 Overview
+---
 
-This project explores customer shopping behavior using Python, SQL, and Power BI. It covers the full analytics pipeline:
+## 📌 Project Overview
 
-Load and explore raw data
+The goal of this project is to simulate a professional-grade analytics workflow, showing the ability to transform raw customer transaction data into strategic business intelligence:
 
-Clean and transform datasets
+✅ **Data Preparation & EDA (Python)**  
+- Load, clean, and transform data  
+- Explore distributions, missing values, correlations, and trends  
 
-Run SQL queries to extract insights
+✅ **SQL Analysis (PostgreSQL / MySQL / SQL Server)**  
+- Import cleaned data into SQL  
+- Run queries to analyze revenue, seasonality, subscription impact, and customer behavior  
 
-Build an interactive Power BI dashboard
+✅ **Machine Learning (Python / scikit-learn)**  
+- **Customer Segmentation:** Apply KMeans clustering to group customers based on spending and frequency  
+- **Purchase Prediction:** Train a model to predict likelihood of subscription or high-value purchase  
 
-Summarize findings in a report and presentation
+✅ **Visualization & Dashboard (Power BI)**  
+- Interactive KPIs and charts showing revenue, segmentation, seasonal trends, and ML predictions  
+- Filters by age, gender, subscription, category, and season  
 
-The goal is to translate raw transaction data into actionable insights for business decision-making.
+✅ **Report & Presentation (Gamma / PowerPoint)**  
+- Business insights, key recommendations, and ML interpretations  
+- Visual storytelling for stakeholders  
 
-📁 Dataset
-Property	Details
-Records	3,900 transactions
-Features	18 columns
-Key Fields	Age, Gender, Purchase Amount, Category, Season, Subscription Status, Payment Method, Review Rating
-Source	Internal / Simulated Retail Data
-🛠️ Tools & Technologies
-Layer	Tools
-Programming	Python 3.x
-Libraries	Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy
-Database	PostgreSQL / MySQL / SQL Server
-Visualization	Power BI
-Report	Microsoft Word / Google Docs
-Presentation	Gamma
-Version Control	Git & GitHub
-🔄 Project Steps
-1. Data Loading & Exploration (Python)
+---
 
-Load dataset using pandas
+## 🔄 End-to-End Workflow
 
-Check data types, missing values, and duplicates
+```mermaid
+flowchart LR
+    A[Raw Data CSV] --> B[Python: EDA & Cleaning]
+    B --> C[SQL: Import & Query Analysis]
+    C --> D[Machine Learning: Clustering & Prediction]
+    D --> E[Power BI: Interactive Dashboard]
+    E --> F[Report & Presentation]
+🛠️ How to Use This Project
 
-Visualize distributions and relationships with matplotlib and seaborn
+Clone the repository
 
-2. Data Cleaning (Python)
+git clone https://github.com/your-username/customer-shopping-behavior-analysis.git
+cd customer-shopping-behavior-analysis
 
-Handle missing values and duplicates
+Python Notebooks
 
-Standardize column names and categories
+01_EDA.ipynb – Load, clean, and explore data
 
-Convert data types for analysis
+02_Data_Cleaning.ipynb – Data transformations and SQL connection
 
-Export cleaned dataset for SQL ingestion
+03_ML_Segmentation_Prediction.ipynb – Customer clustering & purchase prediction
 
-3. SQL Analysis (PostgreSQL / MySQL / SQL Server)
+SQL Database
 
-Import cleaned dataset into the database
+Create database in PostgreSQL/MySQL/MS SQL Server
 
-Run queries to answer business questions:
+Load cleaned dataset from Python
 
-Top revenue-generating product categories
+Open customer_behavior_sql_queries.sql and run business queries
 
-Differences between subscribed vs. non-subscribed customers
+Power BI Dashboard
 
-Seasonal trends and location-based performance
+Open customer_behavior_dashboard.pbix
 
-Average review ratings by category and payment method
+Refresh data connection to SQL database
 
-4. Power BI Dashboard
+Explore interactive charts, KPIs, segmentation, and ML predictions
 
-Connect Power BI to the database
+Report & Presentation
 
-Create interactive visuals: bar charts, slicers, KPI cards, maps
+Summarize findings and recommendations in analysis_report.pdf
 
-Enable filtering by gender, age, season, category, and subscription status
+Build visual slides using Gamma AI, highlighting business and ML insights
 
-5. Written Report
+📊 Dashboard & ML Preview
 
-Summarize methodology, findings, and business recommendations
+Example of dashboard with ML insights and segmentation
 
-Present insights for both technical and non-technical audiences
+Key Features:
 
-6. Presentation (Gamma)
+Total Revenue, Average Order Value, Subscription Rate KPIs
 
-Visual slide deck highlighting key insights, dashboard walkthrough, and recommendations
+Customer Segments from KMeans clustering
 
-📊 Dashboard Preview
+Purchase prediction probability for subscription/high-value transactions
 
-Screenshot or image of the Power BI dashboard
+Seasonal & category trends, revenue breakdown by age and gender
 
-Key Dashboard Features:
+💡 Key Insights
 
-Total Revenue, Average Order Value, and Subscription Rate KPIs
+Top Revenue Category: Clothing contributed 35% of total revenue
 
-Revenue by Category, Gender, and Season
+Subscription Impact: Subscribers spent 27% more per transaction
 
-Customer segmentation by Age Group
+Peak Season: Fall drove the highest sales
 
-Comparison of subscribed vs. non-subscribed customers
+Customer Segments: 3 distinct groups based on purchase frequency and amount
 
-💡 Key Results
+High-Value Segment Prediction: 42% likely to subscribe or make high-value purchases
 
-Top Category: Clothing generated 35% of total revenue
+Payment Preferences: Credit Card most used; Accessories highest review rating
 
-Subscription Impact: Subscribed customers spent 27% more per transaction
+💼 Business Recommendations
 
-Peak Season: Fall had the highest sales volume
+Launch targeted marketing campaigns for high-value customer segments
 
-Preferred Payment: Credit Card was most common
+Promote subscriptions to increase average order value
 
-Ratings Insight: Accessories had the highest average review rating
+Adjust inventory and promotions seasonally (Fall peak)
 
-🚀 How to Run
-Prerequisites
-pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2
-Step 1 — Python Notebooks
-# Clone repository
-git clone https://github.com/your-username/shopping-behavior-analysis.git
-cd shopping-behavior-analysis
+Tailor communications to 25–34 age group
 
-# Open notebooks in order
-jupyter notebook notebooks/01_EDA.ipynb
-jupyter notebook notebooks/02_data_cleaning.ipynb
-Step 2 — Database Setup
-# Example for PostgreSQL
-psql -U your_username -d your_database -f sql/create_tables.sql
-psql -U your_username -d your_database -f sql/load_data.sql
-Step 3 — SQL Queries
+Utilize ML predictions to personalize offers for likely subscribers
 
-Open sql/analysis_queries.sql in pgAdmin, DBeaver, or SSMS
+🧠 Skills Demonstrated
 
-Execute queries to generate insights
+Data Cleaning & Transformation (Python, Pandas)
 
-Step 4 — Power BI Dashboard
+Exploratory Data Analysis (EDA, Seaborn, Matplotlib)
 
-Open dashboard/shopping_dashboard.pbix
+SQL Analysis & Business Querying
 
-Update data source to your database
+Machine Learning (KMeans, Classification, Prediction)
 
-Refresh and explore the interactive dashboard
+KPI Design & Data Storytelling
 
-📂 Project Structure
-shopping-behavior-analysis/
-│
-├── data/
-│   ├── raw/                  # Original dataset
-│   └── cleaned/              # Cleaned dataset
-│
-├── notebooks/
-│   ├── 01_EDA.ipynb
-│   └── 02_data_cleaning.ipynb
-│
-├── sql/
-│   ├── create_tables.sql
-│   ├── load_data.sql
-│   └── analysis_queries.sql
-│
-├── dashboard/
-│   └── shopping_dashboard.pbix
-│
-├── report/
-│   └── analysis_report.pdf
-│
-├── presentation/
-│   └── gamma_presentation_link.md
-│
-├── assets/
-│   └── dashboard_preview.png
-│
-└── README.md
+Interactive Dashboarding (Power BI)
+
+Business Insights Communication
+
+📜 License
+
+MIT License — feel free to fork, star, and use in your portfolio.
+
+👨‍💻 About the Author
+
+Hey, I’m Peter Huang, a Data Analyst.
+I specialize in turning raw data into actionable insights using Python, SQL, Power BI, and AI/ML techniques.
+
+🚀 Stay Connected
+
+LinkedIn: Peter Huang
+
+GitHub: Peter Huang
+
+Portfolio: Your Portfolio
+
+💡 Thanks for checking out this project! Star ⭐ this repo if it helped you, and share it with fellow data enthusiasts.
