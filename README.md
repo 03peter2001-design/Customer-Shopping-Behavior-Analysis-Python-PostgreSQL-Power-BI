@@ -15,9 +15,7 @@ Build an interactive dashboard that highlights KPIs, trends, and customer behavi
 ✅ Report & Presentation (Gamma)
 Summarize findings and recommendations in a written report and create a presentation deck that clearly communicates insights to non‑technical stakeholders.
 ​
-​
 
-You can use this repo as a template to build or showcase your own analytics workflow.
 
 🧾 Dataset
 Transactions: ~3,900 customer purchases
