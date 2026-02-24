@@ -33,8 +33,6 @@ Item Purchased, Category, Purchase Amount, Season, Size, Color
 Discount Applied, Previous Purchases, Review Rating, Shipping Type
 ​
 
-(Replace this section with your actual dataset source and link if needed.)
-
 🛠️ Tools & Technologies
 Python – pandas, numpy, matplotlib / seaborn for EDA and cleaning
 
