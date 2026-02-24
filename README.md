@@ -1,152 +1,154 @@
-# 👨🏻‍💻 Customer Shopping Behavior Data Analyst Portfolio Project (AI & ML Enhanced)
+👨🏻‍💻 Customer Shopping Behavior Analysis
+This repository showcases an end-to-end data analytics portfolio project using retail customer shopping data. It follows a realistic analyst workflow: from loading and cleaning data in Python, to running business-focused SQL queries, building a Power BI dashboard, and wrapping everything up in a report and presentation.
 
-> This project demonstrates a full, corporate-grade end-to-end data analytics workflow, enhanced with machine learning for customer segmentation and purchase prediction. It mirrors real-world analytics tasks, from raw data ingestion to actionable business insights, interactive dashboards, and reporting.
+This project is ideal for:
 
----
+📊 Data analyst candidates who want a job-ready portfolio project
 
-## 📌 Project Overview
+📚 Learners practicing Python, SQL, and Power BI in one pipeline
 
-The goal of this project is to simulate a professional-grade analytics workflow, showing the ability to transform raw customer transaction data into strategic business intelligence:
+💼 Professionals preparing for interviews in Data Analytics / Data Science / Product Analytics
 
-✅ **Data Preparation & EDA (Python)**  
-- Load, clean, and transform data  
-- Explore distributions, missing values, correlations, and trends  
+📌 Project Overview
+The main objective is to transform raw customer shopping data into actionable business insights for a retail company by:
 
-✅ **SQL Analysis (PostgreSQL / MySQL / SQL Server)**  
-- Import cleaned data into SQL  
-- Run queries to analyze revenue, seasonality, subscription impact, and customer behavior  
+✅ Data Preparation, Modeling & EDA (Python)
+Clean, transform, and explore the raw dataset to understand structure, quality, and key patterns.
 
-✅ **Machine Learning (Python / scikit-learn)**  
-- **Customer Segmentation:** Apply KMeans clustering to group customers based on spending and frequency  
-- **Purchase Prediction:** Train a model to predict likelihood of subscription or high-value purchase  
+✅ Data Analysis (SQL)
+Load the cleaned data into a SQL database, simulate business transactions, and answer questions on customer segments, loyalty, discounts, and purchase drivers.
 
-✅ **Visualization & Dashboard (Power BI)**  
-- Interactive KPIs and charts showing revenue, segmentation, seasonal trends, and ML predictions  
-- Filters by age, gender, subscription, category, and season  
+✅ Visualization & Insights (Power BI)
+Build an interactive dashboard that highlights KPIs, trends, and customer behavior, enabling stakeholders to make data‑driven decisions.
 
-✅ **Report & Presentation (Gamma / PowerPoint)**  
-- Business insights, key recommendations, and ML interpretations  
-- Visual storytelling for stakeholders  
+✅ Report & Presentation (Gamma)
+Summarize findings and recommendations in a written report and create a presentation deck that clearly communicates insights to non‑technical stakeholders.
+​
+​
 
----
+You can use this repo as a template to build or showcase your own analytics workflow.
 
-## 🔄 End-to-End Workflow
+🧾 Dataset
+Transactions: ~3,900 customer purchases
 
-```mermaid
-flowchart LR
-    A[Raw Data CSV] --> B[Python: EDA & Cleaning]
-    B --> C[SQL: Import & Query Analysis]
-    C --> D[Machine Learning: Clustering & Prediction]
-    D --> E[Power BI: Interactive Dashboard]
-    E --> F[Report & Presentation]
-🛠️ How to Use This Project
+Features: 18 columns covering demographics, products, monetary spend, discounts, reviews, and shipping behavior
 
+Example fields:
+
+Age, Gender, Location, Subscription Status
+
+Item Purchased, Category, Purchase Amount, Season, Size, Color
+
+Discount Applied, Previous Purchases, Review Rating, Shipping Type
+​
+
+(Replace this section with your actual dataset source and link if needed.)
+
+🛠️ Tools & Technologies
+Python – pandas, numpy, matplotlib / seaborn for EDA and cleaning
+
+PostgreSQL / MySQL / SQL Server – SQL queries and business analysis
+
+Power BI – interactive reporting and dashboards
+
+Gamma – slide deck / presentation creation
+
+Git & GitHub – version control and portfolio hosting
+​
+
+🚶‍♂️ Project Steps
 Clone the repository
 
-git clone https://github.com/your-username/customer-shopping-behavior-analysis.git
-cd customer-shopping-behavior-analysis
+bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+Open the main notebook
 
-Python Notebooks
+Open Customer_Shopping_Behavior_Analysis.ipynb, which includes:
 
-01_EDA.ipynb – Load, clean, and explore data
+Data import
 
-02_Data_Cleaning.ipynb – Data transformations and SQL connection
+Exploratory data analysis (EDA)
 
-03_ML_Segmentation_Prediction.ipynb – Customer clustering & purchase prediction
+Data cleaning & feature engineering
 
-SQL Database
+Loading data into a SQL database
+​
+​
 
-Create database in PostgreSQL/MySQL/MS SQL Server
+Load data into SQL
 
-Load cleaned dataset from Python
+Create a database in PostgreSQL / MySQL / SQL Server
 
-Open customer_behavior_sql_queries.sql and run business queries
+Run the Python notebook to push the cleaned data into SQL
 
-Power BI Dashboard
+Open customer_behavior_sql_queries.sql and execute queries to answer business questions (revenue by gender, high‑value segments, discount behavior, etc.).
+​
+​
 
-Open customer_behavior_dashboard.pbix
+Build the Power BI Dashboard
 
-Refresh data connection to SQL database
+Open customer_behavior_dashboard.pbix in Power BI
 
-Explore interactive charts, KPIs, segmentation, and ML predictions
+Point it to your SQL database or exported CSV
 
-Report & Presentation
+Explore interactive visuals for revenue, customer segments, products, and discounts
+​
 
-Summarize findings and recommendations in analysis_report.pdf
+Create Report & Presentation
 
-Build visual slides using Gamma AI, highlighting business and ML insights
+Write a short project report summarizing the business problem, methods, and key findings
 
-📊 Dashboard & ML Preview
+Use Gamma to generate a clean, recruiter‑friendly slide deck from your report
+​
 
-Example of dashboard with ML insights and segmentation
+(Optional) Follow along with a tutorial
 
-Key Features:
+You can pair this project with your own learning notes or external tutorials to show your learning journey.
+​
 
-Total Revenue, Average Order Value, Subscription Rate KPIs
+📊 Dashboard
+The Power BI dashboard is designed to answer questions such as:
 
-Customer Segments from KMeans clustering
+Which customer segments drive the most revenue?
 
-Purchase prediction probability for subscription/high-value transactions
+How do discounts and subscriptions affect spending?
 
-Seasonal & category trends, revenue breakdown by age and gender
+Which product categories and items perform the best?
 
-💡 Key Insights
+How does behavior vary by age group, gender, or season?
+​
 
-Top Revenue Category: Clothing contributed 35% of total revenue
+Add screenshots of your dashboard in an /images folder and embed them here.
 
-Subscription Impact: Subscribers spent 27% more per transaction
+✅ Results & Insights
+Examples of insights you can highlight:
 
-Peak Season: Fall drove the highest sales
+High‑value age groups and loyal customer segments
 
-Customer Segments: 3 distinct groups based on purchase frequency and amount
+Impact of discounts on revenue vs. margin
 
-High-Value Segment Prediction: 42% likely to subscribe or make high-value purchases
+Products/categories that should be prioritized in campaigns
 
-Payment Preferences: Credit Card most used; Accessories highest review rating
+Subscription and repeat‑purchase behavior patterns
+​
+​
 
-💼 Business Recommendations
+Use this section to tell the story of what you found and how it could influence business decisions.
 
-Launch targeted marketing campaigns for high-value customer segments
+🚀 How to Run Locally
+Install dependencies:
 
-Promote subscriptions to increase average order value
+bash
+pip install -r requirements.txt
+Run the Jupyter notebook(s) in order.
 
-Adjust inventory and promotions seasonally (Fall peak)
+Set up your SQL database and update connection details in the notebook / config.
 
-Tailor communications to 25–34 age group
+Open the Power BI file and refresh the data source.
 
-Utilize ML predictions to personalize offers for likely subscribers
-
-🧠 Skills Demonstrated
-
-Data Cleaning & Transformation (Python, Pandas)
-
-Exploratory Data Analysis (EDA, Seaborn, Matplotlib)
-
-SQL Analysis & Business Querying
-
-Machine Learning (KMeans, Classification, Prediction)
-
-KPI Design & Data Storytelling
-
-Interactive Dashboarding (Power BI)
-
-Business Insights Communication
+Read the report and open the Gamma presentation link (if provided).
 
 📜 License
-
-MIT License — feel free to fork, star, and use in your portfolio.
-
-👨‍💻 About the Author
-
-Hey, I’m Peter Huang, a Data Analyst.
-I specialize in turning raw data into actionable insights using Python, SQL, Power BI, and AI/ML techniques.
-
-🚀 Stay Connected
-
-LinkedIn: Peter Huang
-
-GitHub: Peter Huang
-
-Portfolio: Your Portfolio
-
-💡 Thanks for checking out this project! Star ⭐ this repo if it helped you, and share it with fellow data enthusiasts.
+This project is released under the MIT License.
+Feel free to fork, modify, and use it in your own portfolio.
